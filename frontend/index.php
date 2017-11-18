@@ -234,6 +234,9 @@ require ('includes/header.php');
         <rect x="219.03508" y="47.9392433" class="st3" width="127.6186066" height="27.5605984"></rect>
         </svg>
       </a>
+             <div class="text-center">
+        <h2 style="color: white"> LOOK UP STORIES </h2>
+        </div>
             <form class="text-center">
                 <div class="form-row">
                     <div class="col">
@@ -260,6 +263,9 @@ require ('includes/header.php');
                     </div>
                 </div>
             </form>
+        </div>
+        <div class="text-center">
+        <h3 style="color: white"> or </h3>
         </div>
         <div class="text-center section">
             <a class="btn btn-outline-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
