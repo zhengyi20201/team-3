@@ -1,3 +1,5 @@
+package git;
+
 import java.sql.*;
 
 
@@ -77,16 +79,32 @@ public class Database {
 	   }
 	   
 	   public boolean addStory() {
+		   
+		   //String insert = "INSERT " 
+		   
 		   return false;
 		   
 	   }
 	   
-	   public boolean addCancer() {
-		   return false;
+	   public boolean addCancer(String descr) {
+		   try {
+			   stmt.executeUpdate("INSERT INTO cancer (description) VALUES (\""+ descr + "\");\r\n");
+			   return true;
+		   }catch (Exception e) {
+			// TODO: handle exception
+			   return false;
+		   }
 	   }
 	   
-	   public boolean addStage() {
-		   return false;
+	   public boolean addStage(String descr) {
+		   try {
+			   stmt.executeUpdate("INSERT INTO stage (description) VALUES (\""+ descr + "\");\r\n");
+			   return true;
+		   }catch (Exception e) {
+			// TODO: handle exception
+			   return false;
+		   }
+		   
 	   }
 	   
 	   public boolean dropStory() {
