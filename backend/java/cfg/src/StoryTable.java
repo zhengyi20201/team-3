@@ -125,7 +125,8 @@ public class StoryTable {
                 jsonArray.put(listMem);
                 count++;
             }
-            return jsonObject.put("list", jsonArray);
+            System.out.println(jsonObject.put("list", jsonArray));
+            return jsonObject;//.put("list", jsonArray);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -60,8 +60,8 @@ public class StoryRecord {
         String query = "INSERT INTO STORY (title,datet,age,photo,video,story,cancerID,category1,category2,category3,stage,email) VALUES ( ";
         //query += ID + ",";
         query += "'" + title + "'" + ",";
-        query += age + ",";
         query += datet + ",";
+        query += age + ",";
         query += "'" + photo + "'" + ",";
         query += "'" + video + "'" + ",";
         query += "'" + story + "'" + ",";
@@ -165,11 +165,5 @@ public class StoryRecord {
         return new StoryRecord(title, datet, age, photo, video, story, cancerID, category1, category2, category3, stage, email);
     }
     
-    public static void main(String[] args){
-
-    	for(int i=0;i<100;i++){
-    		
-    	}
-    }
 
 }
