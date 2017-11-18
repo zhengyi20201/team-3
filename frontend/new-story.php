@@ -5,6 +5,7 @@ require ('includes/header.php');
 ?>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="static/js/new-story.js"></script>
     <style>
         /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
         .clear {height:0px; clear:both;}
@@ -470,13 +471,13 @@ require ('includes/header.php');
         </fieldset>
 
 
-        <input type="submit" name="submit" value="Submit"/>
+        <input id="submit" type="submit" name="submit" value="Submit"/>
         <input type="reset" name="reset" value="Reset"/>
 
         <div class="clear"></div>
         <span class="notes">* Is mandetory.</span>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script  src="static/js/new_story.js"></script>
+    <script  src="static/js/new-story.js"></script>
 <?php
 require ('includes/footer.php');

@@ -12,7 +12,7 @@ public class Database {
 	   
 	   //  Database credentials
 	   static final String USER = "root";
-	   static final String PASS = "a1997618";
+	   static final String PASS = "123456";
 	   
 	   Connection connection = null;
 	   Statement stmt = null;
@@ -23,7 +23,7 @@ public class Database {
 		   try {
 			   Class.forName(JDBC_DRIVER);
 
-			   connection = DriverManager.getConnection(DB_URL, USER, null);
+			   connection = DriverManager.getConnection(DB_URL, USER, PASS);
 			   
 			   stmt = connection.createStatement();
 			   

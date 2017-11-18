@@ -10,7 +10,7 @@ public final class JDBCaccess {
     //  Database credentials
     private static final String USER = "root";
     //static final String PASS = "YOURNEWPASSWORD";
-    private static final String PASS = "yzj1997922";
+    private static final String PASS = "123456";
 
     private static Connection connection;
     private static Statement statement;
