@@ -258,7 +258,7 @@ require ('includes/header.php');
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input class="btn btn-secondary form-control" type="submit">
+                            <input class="btn btn-secondary form-control" type="submit" value="Search">
                         </div>
                     </div>
                 </div>
