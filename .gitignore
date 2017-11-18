@@ -10,3 +10,6 @@
 /backend/java/Servers/
 
 .classpath
+
+**.recommenders/
+

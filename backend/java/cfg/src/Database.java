@@ -23,7 +23,7 @@ public class Database {
 		   try {
 			   Class.forName(JDBC_DRIVER);
 
-			   connection = DriverManager.getConnection(DB_URL, USER, PASS);
+			   connection = DriverManager.getConnection(DB_URL, USER, null);
 			   
 			   stmt = connection.createStatement();
 			   
