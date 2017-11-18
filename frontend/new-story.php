@@ -368,18 +368,31 @@ require ('includes/header.php');
     <body>
     <div id="form" class="form-wrapper">
         <label class="text">
-            <span>Your Name (leave empty if you don't want to remain anonymus)</span>
+            <span>Your Name (leave empty if you want to remain anonymus)</span>
             <div class="input-wrapper">
                 <input type="text" />
             </div>
         </label>
 
+        <label class="text">
+            <span>Age</span>
+            <div class="input-wrapper">
+                <input type="number" />
+            </div>
+        </label>
+
+        <label class="text">
+            <span>Email</span>
+            <div class="input-wrapper">
+                <input type="email" />
+            </div>
+        </label>
 
         <label class="dropdown">
             <span>Type of Cancer</span>
             <div class="input-wrapper">
                 <select size="1">
-                    <option>Type of Cancer</option>
+                    <option></option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
@@ -387,42 +400,27 @@ require ('includes/header.php');
             </div>
         </label>
 
+        <label class="dropdown">
+            <span>Stage</span>
+            <div class="input-wrapper">
+                <select size="1">
+                    <option></option>
+                    <option value="1">Stage 1</option>
+                    <option value="2">Stage 2</option>
+                    <option value="3">Stage 3</option>
+                </select>
+            </div>
         </label>
 
         <label class="text">
             <span>Your Story</span>
             <div class="input-wrapper">
-                <textarea>Tell the world your story </textarea>
+                <textarea placeholder="Tell the world your story" rows="10"></textarea>
             </div>
         </label>
 
         <fieldset class="radio-check-label">
-            <span class="label">Do you like this?</span>
-
-            <div class="input-wrapper">
-                <label class="radio" for="yes">
-                    <input type="radio" name="foo" value="yes" id="yes"/>
-                    <span>Yes, please</span>
-                </label>
-            </div>
-
-            <div class="input-wrapper">
-                <label class="radio" for="no" >
-                    <input type="radio" name="foo" value="no" id="no"/>
-                    <span>No, thanks</span>
-                </label>
-            </div>
-
-            <div class="input-wrapper">
-                <label class="radio" for="maybe" for="maybe">
-                    <input type="radio" name="foo" value="maybe" id="maybe"/>
-                    <span>Well, maybe</span>
-                </label>
-            </div>
-        </fieldset>
-
-        <fieldset class="radio-check-label">
-            <span class="label">Please check all</span>
+            <span class="label">Category</span>
             <div class="input-wrapper">
                 <label class="checkbox" for="accept">
                     <input type="checkbox" name="accept" id="accept"/>
