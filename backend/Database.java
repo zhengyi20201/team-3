@@ -1,5 +1,3 @@
-package git;
-
 import java.sql.*;
 
 
@@ -30,16 +28,41 @@ public class Database {
 			   
 			   // Story table : 
 			   // Change this later. 
-			   String createStoryTable = "CREATE TABLE Story(\n title TEXT NOT NULL);";
+			   String createStoryTable = 
+					   "CREATE TABLE STORY(\r\n" + 
+			   		"  ID INT NOT NULL AUTO_INCREMENT,\r\n" + 
+			   		"  title TEXT NOT NULL,\r\n" + 
+			   		"  age INT,\r\n" + 
+			   		"  photo TEXT,\r\n" + 
+			   		"  video TEXT,\r\n" + 
+			   		"  story TEXT NOT NULL,\r\n" + 
+			   		"  cancerID INT,\r\n" + 
+			   		"  category1 INT NOT NULL,\r\n" + 
+			   		"  category2 INT,\r\n" + 
+			   		"  category3 INT,\r\n" + 
+			   		"  stage INT,\r\n" + 
+			   		"  email TEXT,\r\n" + 
+			   		"  PRIMARY KEY ( ID )\r\n" + 
+			   		");";
 			   
 			   stmt.executeUpdate(createStoryTable);
 			   
 			   // Create cancer table: 
-			   String createCancerTable = "CREATE TABLE Cancer(\n id TEXT NOT NULL)";
+			   String createCancerTable = 
+					   "CREATE TABLE CANCER(\r\n" + 
+			   		"  ID INT NOT NULL AUTO_INCREMENT,\r\n" + 
+			   		"  description TEXT NOT NULL,\r\n" + 
+			   		"  PRIMARY KEY ( ID )\r\n" + 
+			   		");";
 			   stmt.executeUpdate(createCancerTable);
 			   
 			   // Create stage table: 
-			   String createStageTable = "CREATE TABLE Stage(\n name TEXT NOT NULL)";
+			   String createStageTable = 
+					   "CREATE TABLE STAGE(\r\n" + 
+			   		"  ID INT NOT NULL AUTO_INCREMENT,\r\n" + 
+			   		"  description TEXT NOT NULL,\r\n" + 
+			   		"  PRIMARY KEY ( ID )\r\n" + 
+			   		");";
 			   stmt.executeUpdate(createStageTable);
 			   
 			   System.out.println("Connect success");
