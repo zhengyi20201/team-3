@@ -1,3 +1,4 @@
+package database;//STEP 1. Import required packages
 
 import java.sql.*;
 
@@ -16,12 +17,6 @@ public final class JDBCaccess {
     private static Statement statement;
 
     private static void connect() {
-    	try {
-			Class.forName("com.mysql.jdbc.Driver");
-		} catch (ClassNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
         try {
             connection = DriverManager.getConnection(DB_URL, USER, PASS);
         } catch (Exception e) {
