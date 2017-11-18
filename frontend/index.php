@@ -3,6 +3,14 @@ $page_title = 'Home';
 
 require ('includes/header.php');
 ?>
+<style>
+    .story-link {
+        color: #920763;
+    }
+    .story-link:hover {
+        color: #900561;
+    }
+</style>
     <div class="container">
         <div class="section">
             <a href="/" class="site-header__logo">
@@ -285,7 +293,7 @@ require ('includes/header.php');
             foreach ($objs as $obj) {
                 ?>
                 <div class="card text-center section">
-                    <h2><a href="/story.php?id=<?= $obj['ID']?>"><?= $obj['title'] ?></a></h2>
+                    <h2><a href="/story.php?id=<?= $obj['ID']?>" class="story-link"><?= $obj['title'] ?></a></h2>
                 </div>
                 <?php
             }

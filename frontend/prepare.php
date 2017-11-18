@@ -17,6 +17,10 @@
     height: 400px;
     padding: 1rem
     }
+      h3 {
+          padding-top: 5px;
+          padding-bottom: 5px;
+      }
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">

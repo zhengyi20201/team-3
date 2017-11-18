@@ -426,23 +426,60 @@ require ('includes/header.php');
             <div class="input-wrapper">
                 <label class="checkbox" for="accept">
                     <input type="checkbox" name="accept" id="accept"/>
-                    <span>Okay, I accept all u want</span>
+                    <!--<span>Okay, I accept all u want</span>-->
+                    <span>Relationships</span>
                 </label>
             </div>
 
             <div class="input-wrapper">
                 <label class="checkbox" for="spam" >
                     <input type="checkbox" name="spam" id="spam"/>
-                    <span>Yes, send me all your spam.</span>
+                    <!--<span>Yes, send me all your spam.</span>-->
+                    <span>Hospital Experience</span>
                 </label>
             </div>
 
             <div class="input-wrapper">
                 <label class="checkbox" for="toolbars" >
                     <input type="checkbox" name="toolbars" id="toolbars"/>
-                    <span>Install 1000 toolbars and add all available plugins to my browser</span>
+                    <!--<span>Install 1000 toolbars and add all available plugins to my browser</span>-->
+                    <span>Family</span>
                 </label>
+            </div>
 
+            <div class="input-wrapper">
+                <label class="checkbox" for="toolbars" >
+                    <input type="checkbox" name="toolbars" id="toolbars"/>
+                    <span>Work</span>
+                </label>
+            </div>
+
+            <div class="input-wrapper">
+                <label class="checkbox" for="toolbars" >
+                    <input type="checkbox" name="toolbars" id="toolbars"/>
+                    <span>Social Life</span>
+                </label>
+            </div>
+
+            <div class="input-wrapper">
+                <label class="checkbox" for="toolbars" >
+                    <input type="checkbox" name="toolbars" id="toolbars"/>
+                    <span>Sports</span>
+                </label>
+            </div>
+
+            <div class="input-wrapper">
+                <label class="checkbox" for="toolbars" >
+                    <input type="checkbox" name="toolbars" id="toolbars"/>
+                    <span>Symptoms</span>
+                </label>
+            </div>
+
+            <div class="input-wrapper">
+                <label class="checkbox" for="toolbars" >
+                    <input type="checkbox" name="toolbars" id="toolbars"/>
+                    <span>Just Diagnosed</span>
+                </label>
             </div>
         </fieldset>
 
