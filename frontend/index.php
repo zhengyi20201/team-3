@@ -246,6 +246,9 @@ require ('includes/header.php');
         <h2 style="color: white"> LOOK UP STORIES </h2>
         </div>
             <form class="text-center">
+                <?php
+                $search = isset($_GET['age']) && $_GET['age'] !== "" && isset($_GET['stage']) && $_GET['stage'] !== "";
+                ?>
                 <div class="form-row">
                     <div class="col">
                         <div class="input-group"><input class="form-control" name="age" type="number" min="1" placeholder="Age"></div>
@@ -285,7 +288,7 @@ require ('includes/header.php');
         </div>
         <div class="section ">
             <?php
-            if (isset($_GET['age']) && $_GET['age'] !== "" && isset($_GET['stage']) && $_GET['stage'] !== "") {
+            if ($search) {
                 $objs = json_decode(file_get_contents('http://localhost:8080/cfg/filter-stories?age=' . $_GET['age'] . '&stage=' . $_GET['stage']), true)['list'];
             } else {
                 $objs = json_decode(file_get_contents('http://localhost:8080/cfg/get-stories'), true)['list'];
