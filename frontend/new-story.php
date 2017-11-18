@@ -451,7 +451,7 @@ require ('includes/header.php');
         <input type="reset" name="reset" value="Reset"/>
 
         <div class="clear"></div>
-        <span class="notes">* Is mandetory.</span>
+        <!--<span class="notes">* Is mandetory.</span>-->
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="static/js/new-story.js"></script>
