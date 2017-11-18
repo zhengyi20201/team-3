@@ -6,6 +6,7 @@ import org.json.JSONObject;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class StoryRecord {
@@ -127,18 +128,18 @@ public class StoryRecord {
         JSONParser jsonParser = new JSONParser();
         try {
             JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonString);
-            int ID = jsonObject.getInt("ID");
-            String title = jsonObject.getString("title");
-            int datet = jsonObject.getInt("datet");
-            int age = jsonObject.getInt("age");
-            String photo = jsonObject.getString("photo");
-            String video = jsonObject.getString("video");
-            String story = jsonObject.getString("story");
-            int cancerID = jsonObject.getInt("cancerID");
-            int category1 = jsonObject.getInt("category1");
-            int category2 = jsonObject.getInt("category1");
-            int category3 = jsonObject.getInt("category1");
-            int stage = jsonObject.getInt("stage");
+            ID = jsonObject.getInt("ID");
+            title = jsonObject.getString("title");
+            datet = jsonObject.getInt("datet");
+            age = jsonObject.getInt("age");
+            photo = jsonObject.getString("photo");
+            video = jsonObject.getString("video");
+            story = jsonObject.getString("story");
+            cancerID = jsonObject.getInt("cancerID");
+            category1 = jsonObject.getInt("category1");
+            category2 = jsonObject.getInt("category1");
+            category3 = jsonObject.getInt("category1");
+            stage = jsonObject.getInt("stage");
             String email = jsonObject.getString("email");
 
         } catch (Exception e) {
@@ -148,7 +149,21 @@ public class StoryRecord {
 
     public static StoryRecord generateRandomRecord() {
         //TODO: do
-        return null;
+        Random random = new Random();
+        String title = "" + random.nextInt(100000);
+        int datet = random.nextInt(1000);
+        int age = random.nextInt(25);
+        String photo = "" + random.nextInt(100000);
+        String video = "" + random.nextInt(100000);
+        String story = "" + random.nextInt(100000);
+        int cancerID = random.nextInt(100000);
+        int category1 = random.nextInt(100000);
+        int category2 = random.nextInt(100000);
+        int category3 = random.nextInt(100000);
+        int stage = random.nextInt(100000);
+        String email = "" + random.nextInt(100000);
+
+        return new StoryRecord(title, datet, age, photo, video, story, cancerID, category1, category2, category3, stage, email);
     }
 
 }

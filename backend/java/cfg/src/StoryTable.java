@@ -1,8 +1,10 @@
+package database;
 
 import java.sql.*;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import database.StoryRecord;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -72,13 +74,15 @@ public class StoryTable {
         }
     }
 
-    public JSONObject getLatest(int num) {
+    // int max: max to display. 
+    public JSONObject getLatest(int max) {
         JSONObject jsonObject = new JSONObject();
         JSONArray jsonArray = new JSONArray();
         String query = "select * from " + tableName + " order by datet";
         try {
             ResultSet resultSet = statement.executeQuery(query);
-            while (resultSet.next()) {
+            int count = 1;
+            while (resultSet.next() && count <= max) {
                 int ID = resultSet.getInt("ID");
                 String title = resultSet.getString("title");
                 int datet = resultSet.getInt("datet");
@@ -87,6 +91,7 @@ public class StoryTable {
                 listMem.put("title", title);
                 listMem.put("datet", datet);
                 jsonArray.put(listMem);
+                count++;
             }
             return jsonObject.put("list", jsonArray);
         } catch (Exception e) {
@@ -94,4 +99,37 @@ public class StoryTable {
         }
         return null;
     }
+
+    public JSONObject getLastestWithCon(int max, int age, int stage) {
+        JSONObject jsonObject = new JSONObject();
+        JSONArray jsonArray = new JSONArray();
+
+        // Select age range from (age -4) to ( age + 4) and show the current the stage and the next stage.
+        // The patient or parents may want to know what the next stage is gonna be like.
+
+        String query = "SELECT * FROM " + tableName + " WHERE age>= " + (age - 4) + " AND age <= " + (age + 4)
+                + " AND stage<= " + (stage + 1) + " AND stage >= " + stage + " order by datet";
+
+        try {
+            ResultSet resultSet = statement.executeQuery(query);
+            int count = 1;
+            while (resultSet.next() && count <= max) {
+                int ID = resultSet.getInt("ID");
+                String title = resultSet.getString("title");
+                int datet = resultSet.getInt("datet");
+                JSONObject listMem = new JSONObject();
+                listMem.put("ID", ID);
+                listMem.put("title", title);
+                listMem.put("datet", datet);
+                jsonArray.put(listMem);
+                count++;
+            }
+            return jsonObject.put("list", jsonArray);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }

@@ -1,3 +1,4 @@
+package database;
 
 import org.json.JSONObject;
 
@@ -12,6 +13,9 @@ public class _story_test {
         System.out.println(storyRecord1.generateJSON());
         JSONObject listObj = storyTable.getLatest(3);
         System.out.println(listObj.toString());
+        for (int i = 0; i < 100; i++) {
+            storyTable.insert(StoryRecord.generateRandomRecord());
+        }
 
 
     }
