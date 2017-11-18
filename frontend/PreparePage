@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Process</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  .scroll-box {
+    overflow-y: scroll;
+    height: 100px;
+    padding: 1rem
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Just Diagnosed --></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Stay in Hospital --></a>
+    </li>
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        How Would It Affect My Life -->
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section31">Appearance</a>
+        <a class="dropdown-item" href="#section32">Job</a>
+        <a class="dropdown-item" href="#section32">Education</a>
+        <a class="dropdown-item" href="#section32">Relationship</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section4">Duraing Treatments</a>
+    </li>
+   
+  </ul>
+</nav>
+
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:500px">
+  <h1>Just Diagnosed</h1>
+  <br />
+  <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Artical title 1
+      </a>
+      </div>
+      <div id="collapse1" class="collapse">
+        <div class="card-block">
+            <div class="scroll-box">
+                Import Artical content here.
+            </div>
+        </div>
+      </div>
+   </div>
+   
+   <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Artical title 2
+      </a>
+      </div>
+      <div id="collapse2" class="collapse">
+        <div class="card-block">
+            <div class="scroll-box">
+                If you are a friend or family member of a parent whose child has been diagnosed with cancer, you will naturally want to ask, 'Is there anything I can do to help?'. But when parents are in such an overwhelming situation, they may struggle to think of an answer.
+                <br />
+                Make it easy for them
+Hearing their child has cancer turns a parent's world upside down and they may not know where to start when they are offered help. So make a practical offer, like collecting the other children from school.
+                <br />
+Be specific about time too. For example, say you'll pick up the children from school on Tuesday, rather than generally promising to babysit sometime. This approach makes it easier to plan, and gives parents one less thing to think about. 
+            </div>
+        </div>
+      </div>
+   </div>
+   
+   <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Artical title 3
+      </a>
+      </div>
+      <div id="collapse3" class="collapse">
+        <div class="card-block">
+            <div class="scroll-box">
+                Import Artical content here.
+            </div>
+        </div>
+      </div>
+   </div>
+   
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        Youtube Video 1
+      </a>
+      </div>
+      <div id="collapse4" class="collapse">
+        <div class="card-block">
+           <div style="text-align: center;">
+            <iframe allowfullscreen="" frameborder="0" height="400" src="https://www.youtube.com/embed/kt0B9NXFxl0" width="700"></iframe>
+           </div>
+        </div>
+      </div>
+   </div>
+   
+  <p></p>
+  <p></p>
+</div>
+<div id="section2" class="container-fluid bg-warning" style="padding-top:50px;padding-bottom:500px">
+  <h1>Stay in Hospital</h1>
+  <p></p>
+</div>
+
+<div id="section31" class="container-fluid bg-light" style="padding-top:50px;padding-bottom:500px">
+  <h1>Appearance</h1>
+
+</div>
+<div id="section32" class="container-fluid bg-info" style="padding-top:50px;padding-bottom:500px">
+  <h1>Job,Education and Relationship</h1>
+
+</div>
+<div id="section4" class="container-fluid bg-secondary" style="padding-top:50px;padding-bottom:500px">
+  <h1>Duaring Treatments</h1>
+
+</div>
+
+</body>
+</html>
