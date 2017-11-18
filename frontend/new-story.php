@@ -366,30 +366,6 @@ require ('includes/header.php');
     </head>
 
     <body>
-    <div id="options" class="form-wrapper">
-        <fieldset class="radio-check-label" id="color">
-            <span class="label">Choose your theme</span>
-            <div class="input-wrapper">
-                <label class="radio" id="dark">
-                    <input type="radio" name="color" value="dark"/>
-                    <span>Dark version</span>
-                </label>
-            </div>
-            <div class="input-wrapper">
-                <label class="radio" id="light">
-                    <input type="radio" name="color" value="light"/>
-                    <span>Light version</span>
-                </label>
-            </div>
-            <div class="input-wrapper">
-                <label class="radio" id="none">
-                    <input type="radio" name="color" value="none"/>
-                    <span>Oh boy, your design suxx. Giv' me a clean version.</span>
-                </label>
-            </div>
-        </fieldset>
-    </div>
-
     <div id="form" class="form-wrapper">
         <label class="text">
             <span>Your Name (leave empty if you don't want to remain anonymus)</span>

@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class GetStory
  */
-@WebServlet(name = "get-story", urlPatterns = { "/get-story" })
-public class GetStory extends HttpServlet {
+@WebServlet("/get-stories")
+public class GetStories extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public GetStory() {
+    public GetStories() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,10 +26,9 @@ public class GetStory extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id = Integer.parseInt(request.getParameter("id"));
 		StoryTable st = new StoryTable("STORY");
-		String story = st.selectByID(id).generateJSON().toString();
-		response.getWriter().append(story);
+		String stories = st.getLatest(100).toString();
+		response.getWriter().append(stories);
 	}
 
 	/**

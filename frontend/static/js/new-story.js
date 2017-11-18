@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-  $('.form-wrapper, html').addClass('dark');
+  $('.form-wrapper, html').addClass('light');
   $('input[value="dark"]').attr('checked', 'checked');
 
   $('#options input').click(function(){
