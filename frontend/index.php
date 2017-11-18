@@ -37,7 +37,7 @@ require ('includes/header.php');
         </div>
         <div class="section">
             <?php
-            $objs = json_decode(file_get_contents('http://localhost:8080/cfg/get-stories'))['list'];
+            $objs = json_decode(file_get_contents('http://localhost:8080/cfg/get-stories'), true)['list'];
             foreach ($objs as $obj) {
                 ?>
                 <div>
