@@ -37,11 +37,15 @@ require ('includes/header.php');
         </div>
         <div class="section">
             <?php
-            $objs = json_decode(file_get_contents('http://localhost:8080/cfg/get-stories'), true)['list'];
+            if (isset($_GET['age']) && $_GET['age'] !== "" && isset($_GET['stage']) && $_GET['stage'] !== "") {
+                $objs = json_decode(file_get_contents('http://localhost:8080/cfg/filter-stories?age=' . $_GET['age'] . '&stage=' . $_GET['stage']), true)['list'];
+            } else {
+                $objs = json_decode(file_get_contents('http://localhost:8080/cfg/get-stories'), true)['list'];
+            }
             foreach ($objs as $obj) {
                 ?>
                 <div>
-                    <h2><?= $obj['title'] ?></h2>
+                    <h2><a href="/story.php?id=<?= $obj['ID']?>"><?= $obj['title'] ?></a></h2>
                 </div>
                 <?php
             }
