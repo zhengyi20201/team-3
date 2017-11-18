@@ -392,10 +392,12 @@ require ('includes/header.php');
             <span>Type of Cancer</span>
             <div class="input-wrapper">
                 <select size="1">
-                    <option></option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option selected disabled hidden value=''>Choose the Type</option>
+                    <option value="1">Bladder cancer</option>
+                    <option value="2">Lung cancer</option>
+                    <option value="3">Brain cancer</option>
+                    <option value="4">Non-Hodgkin lymphoma</option>
+                    <option value="5">Bone cancer</option>
                 </select>
             </div>
         </label>
@@ -404,7 +406,7 @@ require ('includes/header.php');
             <span>Stage</span>
             <div class="input-wrapper">
                 <select size="1">
-                    <option></option>
+                    <option selected disabled hidden value=''>Choose the Stage</option>
                     <option value="1">Stage 1</option>
                     <option value="2">Stage 2</option>
                     <option value="3">Stage 3</option>
