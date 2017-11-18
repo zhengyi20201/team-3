@@ -14,7 +14,7 @@
   }
   .scroll-box {
     overflow-y: scroll;
-    height: 100px;
+    height: 400px;
     padding: 1rem
     }
   </style>
@@ -47,19 +47,42 @@
   </ul>
 </nav>
 
-<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:500px">
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:500px;">
   <h1>Just Diagnosed</h1>
   <br />
+  <h2>For 
   <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-        Artical title 1
+        Sample Artical 1 -- Your feelings
       </a>
       </div>
       <div id="collapse1" class="collapse">
         <div class="card-block">
             <div class="scroll-box">
-                Import Artical content here.
+                Anger, numbness, shock, fear, guilt – you might be feeling all, one or none of these. Cancer can give you more ups and downs than a yo-yo. Whatever you’re feeling right now is normal. But there are two things that are important to know: it’s not your fault and you’re not alone.
+                <br />
+                Dealing with the diagnosis
+                One minute you’re getting on with life and the next you have an illness that throws everything into question. It’s natural to be angry. You might feel the situation is unfair. You might feel frightened and worried about the impact it will have on your life and those around you.
+                <br />
+                Whatever situation you’re in – living independently or with family, and whether you’re in education or work – there are people who can help you deal with the things that are most important to you. Right now, this could be how to talk to the people in your life, accessing benefits if you need to take time off work, support with pausing your studies – or simply dealing with your emotions.
+                <br />
+                Feeling alone--------------------------------------------------------------------------------------------------
+                <br />
+                When something this life changing happens to you, it’s normal to feel that no one can really understand what you’re going through. Lots of young people say that a diagnosis can make them feel isolated and alone.
+                It might be hard to believe but there will be people who get exactly how you’re feeling. Your care team (the group of professionals looking after you) is one, but you’ll also find there is a whole ‘community’ of young people who are connected by a cancer diagnosis. If you are treated on a young person’s ward then you’ll probably find people to talk to who are going through similar stuff.
+                <br />
+                Feeling low-----------------------------------------------------------------------------------------------------
+                <br />
+                You may feel low or worried about the future and this is completely natural. There are bound to be times through your treatment when you feel down, and days where you’re feeling more resilient. It’s really important to keep checking in with yourself and recognise when you might need some support – especially if you’re feeling sad most of the time.
+                Opening up can be tough but it really helps to talk about things, rather than bottling them up. Start by speaking to someone you trust about how you’re feeling. This could be a friend, someone from your care team or one of these organisations. We’re all here to listen and help, with no judgement.
+                <br />
+                Tackling big questions------------------------------------------------------------------------------------------
+                <br />
+                Young people tell us that having cancer can bring up some pretty intense questions that they feel no one can answer. Most young people do get better and things are continuing to improve as dedicated scientists and professionals work out new and better ways to treat cancer. It’s also important to remember that the cancers that affect young people are very different to those affecting older adults.
+                Everyone’s situation is different so it’s always best to talk about this with your consultant, as they’ll be able to talk you through the next steps and hopefully help to reassure you.
+                <br />
+                
             </div>
         </div>
       </div>
@@ -68,7 +91,7 @@
    <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-        Artical title 2
+        Sample Artical title 2
       </a>
       </div>
       <div id="collapse2" class="collapse">
@@ -77,9 +100,9 @@
                 If you are a friend or family member of a parent whose child has been diagnosed with cancer, you will naturally want to ask, 'Is there anything I can do to help?'. But when parents are in such an overwhelming situation, they may struggle to think of an answer.
                 <br />
                 Make it easy for them
-Hearing their child has cancer turns a parent's world upside down and they may not know where to start when they are offered help. So make a practical offer, like collecting the other children from school.
+                Hearing their child has cancer turns a parent's world upside down and they may not know where to start when they are offered help. So make a practical offer, like collecting the other children from school.
                 <br />
-Be specific about time too. For example, say you'll pick up the children from school on Tuesday, rather than generally promising to babysit sometime. This approach makes it easier to plan, and gives parents one less thing to think about. 
+                Be specific about time too. For example, say you'll pick up the children from school on Tuesday, rather than generally promising to babysit sometime. This approach makes it easier to plan, and gives parents one less thing to think about. 
             </div>
         </div>
       </div>
@@ -88,7 +111,7 @@ Be specific about time too. For example, say you'll pick up the children from sc
    <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Artical title 3
+        Samle Artical title 3
       </a>
       </div>
       <div id="collapse3" class="collapse">
@@ -120,6 +143,8 @@ Be specific about time too. For example, say you'll pick up the children from sc
 </div>
 <div id="section2" class="container-fluid bg-warning" style="padding-top:50px;padding-bottom:500px">
   <h1>Stay in Hospital</h1>
+  
+  
   <p></p>
 </div>
 
