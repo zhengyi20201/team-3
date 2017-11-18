@@ -1,10 +1,8 @@
-package database;
 
 import java.sql.*;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import database.StoryRecord;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -40,8 +38,11 @@ public class StoryTable {
             ArrayList<StoryRecord> storyRecords = StoryRecord.fromResultSet(resultSet);
             if (storyRecords.size() > 1) {
                 throw new Exception("primary key is more than one");
+            } else if(storyRecords.size()==1){
+            	return storyRecords.get(0);
+            }else{
+            	return null;
             }
-            return storyRecords.get(0);
         } catch (Exception e) {
             e.printStackTrace();
             return null;

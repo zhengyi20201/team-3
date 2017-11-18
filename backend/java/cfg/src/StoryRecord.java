@@ -1,4 +1,3 @@
-package database;
 
 
 import org.json.simple.parser.JSONParser;
@@ -164,6 +163,13 @@ public class StoryRecord {
         String email = "" + random.nextInt(100000);
 
         return new StoryRecord(title, datet, age, photo, video, story, cancerID, category1, category2, category3, stage, email);
+    }
+    
+    public static void main(String[] args){
+
+    	for(int i=0;i<100;i++){
+    		
+    	}
     }
 
 }

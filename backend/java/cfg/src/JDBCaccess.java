@@ -1,10 +1,10 @@
-package database;//STEP 1. Import required packages
 
 import java.sql.*;
 
 public final class JDBCaccess {
     // JDBC driver name and database URL
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+   
     //static final String DB_URL = "jdbc:mysql://34.240.123.110:3306/StoryDatabase";
     private static final String DB_URL = "jdbc:mysql://localhost:3306/test";
 
@@ -18,6 +18,7 @@ public final class JDBCaccess {
 
     private static void connect() {
         try {
+        	Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DB_URL, USER, PASS);
         } catch (Exception e) {
             System.out.println("try to connect failed");

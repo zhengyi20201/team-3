@@ -36,7 +36,16 @@ require ('includes/header.php');
             <a class="btn btn-outline-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
         </div>
         <div class="section">
-
+            <?php
+            $objs = json_decode(file_get_contents('http://localhost:8080/cfg/get-stories'))['list'];
+            foreach ($objs as $obj) {
+                ?>
+                <div>
+                    <h2><?= $obj['title'] ?></h2>
+                </div>
+                <?php
+            }
+            ?>
         </div>
     </div>
 <?php
