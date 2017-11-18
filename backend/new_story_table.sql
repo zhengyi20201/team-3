@@ -1,6 +1,7 @@
 CREATE TABLE STORY(
   ID INT NOT NULL AUTO_INCREMENT,
   title TEXT NOT NULL,
+  datet TEXT NOT NULL,
   age INT,
   photo TEXT,
   video TEXT,
