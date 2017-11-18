@@ -4,7 +4,7 @@ $page_title = 'Home';
 require ('includes/header.php');
 ?>
     <div class="container">
-        <div>
+        <div class="section">
             <form class="text-center">
                 <div class="form-row">
                     <div class="col">
@@ -32,10 +32,10 @@ require ('includes/header.php');
                 </div>
             </form>
         </div>
-        <div class="text-center">
+        <div class="text-center section">
             <a class="btn btn-outline-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
         </div>
-        <div>
+        <div class="section">
 
         </div>
     </div>
