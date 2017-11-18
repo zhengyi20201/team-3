@@ -268,7 +268,7 @@ require ('includes/header.php');
         <h3 style="color: white"> or </h3>
         </div>
         <div class="text-center section">
-            <a class="btn btn-outline-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
+            <a class="btn btn-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
         </div>
         <div class="section">
             <?php
