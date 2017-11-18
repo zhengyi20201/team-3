@@ -124,9 +124,9 @@ public class Story {
 	public void createJson(String filePath) {
 		JSONObject story = new JSONObject();
 		story.put("id", new Integer(this.id));
-		story.put("time", this.time);
 		story.put("age", new Integer(this.age));
 		story.put("email", this.email);
+		story.put("time", this.time);
 		story.put("cancer", new Integer(this.cancer));
 		story.put("stage", new Integer(this.stage));
 		story.put("catergory", new Integer(this.catergory));
@@ -142,4 +142,10 @@ public class Story {
             e.printStackTrace();
         }
 	}
+	
+//	public static void main(String args[]) {
+//		Timestamp t = new Timestamp(System.currentTimeMillis());
+//		Story story = new Story(0,10,"khoahieu.tran@outlook.com", "video link", "caption", "image link", 0, 1, t, 1);
+//		story.createJson("test.json");
+//	}
 }
