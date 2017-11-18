@@ -267,10 +267,10 @@ require ('includes/header.php');
         <div class="text-center">
         <h3 style="color: white"> or </h3>
         </div>
-        <div class="text-center section">
+        <div class="text-center section post-button-div">
             <a class="btn btn-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
         </div>
-        <div class="section">
+        <div class="section ">
             <?php
             if (isset($_GET['age']) && $_GET['age'] !== "" && isset($_GET['stage']) && $_GET['stage'] !== "") {
                 $objs = json_decode(file_get_contents('http://localhost:8080/cfg/filter-stories?age=' . $_GET['age'] . '&stage=' . $_GET['stage']), true)['list'];
@@ -279,7 +279,7 @@ require ('includes/header.php');
             }
             foreach ($objs as $obj) {
                 ?>
-                <div>
+                <div class="card text-center section">
                     <h2><a href="/story.php?id=<?= $obj['ID']?>"><?= $obj['title'] ?></a></h2>
                 </div>
                 <?php
