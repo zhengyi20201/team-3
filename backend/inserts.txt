@@ -1,0 +1,5 @@
+INSERT INTO cancer (description) VALUES ("aaaaa");
+
+INSERT INTO stage (description) VALUES ("aaaaa");
+
+INSERT INTO story (title,
