@@ -85,8 +85,10 @@ public class Database {
 		   try {
 			   ResultSet rs = stmt.executeQuery(query);
 			   while(rs.next()) {
+				   int id = rs.getInt("");
 				   
 			   }
+			   rs.close();
 		   } catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -97,7 +99,16 @@ public class Database {
 		   return "";
 	   }
 	   
-	   
+	   public void exit() {
+		   try {
+			   stmt.close();
+			   connection.close();
+		   }
+		   catch (Exception e) {
+			// TODO: handle exception
+		   System.err.print(e);
+		}
+	   }
 	   
 	   
 	   public static void main(String[] args) {
