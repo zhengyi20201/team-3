@@ -1,1 +1,12 @@
 **.idea/
+
+**.metadata/
+
+.project
+
+**WebContent/
+**.settings/
+
+/backend/java/Servers/
+
+.classpath
