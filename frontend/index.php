@@ -33,10 +33,10 @@ require ('includes/header.php');
             </form>
         </div>
         <div class="text-center">
-            <a class="btn btn-outline-secondary btn-lg form-control">Post My Own Story.</a>
+            <a class="btn btn-outline-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
         </div>
         <div>
-            
+
         </div>
     </div>
 <?php
