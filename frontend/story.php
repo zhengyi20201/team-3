@@ -5,7 +5,7 @@ $page_title = $obj['title'];
 
 require ('includes/header.php');
 ?>
-<section>
+<section class="container card section">
     <h1><?= $page_title ?></h1>
     <div>Age: <?= $obj['age'] ?> Stage: <?= $obj['stage'] ?></div>
     <div><?= $obj['story'] ?></div>

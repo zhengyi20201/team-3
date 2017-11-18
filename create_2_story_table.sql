@@ -3,7 +3,7 @@ DROP TABLE STORY;
 CREATE TABLE STORY(
   ID INT NOT NULL AUTO_INCREMENT,
   title TEXT NOT NULL,
-  datet TEXT NOT NULL,
+  datet INT NOT NULL,
   age INT,
   photo TEXT,
   video TEXT,
@@ -20,7 +20,7 @@ CREATE TABLE STORY(
 INSERT INTO STORY (title,datet,age,photo,video,story,cancerID,category1,category2,category3,stage,email)
 VALUES (
   'Kirsty tells the story of her Nan, Joyces\', experience of pancreatic cancer',
-  '26 October 2017',
+  '26102017',
   '12',
   '',
   '',
@@ -46,7 +46,7 @@ She was very blasé about her inoperable cancer, so much so I almost believed th
 INSERT INTO STORY (title,datet,age,photo,video,story,cancerID,category1,category2,category3,stage,email)
 VALUES (
   'Sara\'s story with acute lymphoblastic leukaemia',
-  '12 June 2015',
+  '12062015',
   '3',
   '',
   '',

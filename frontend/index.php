@@ -267,8 +267,13 @@ require ('includes/header.php');
         <div class="text-center">
         <h3 style="color: white"> or </h3>
         </div>
-        <div class="text-center section post-button-div">
-            <a class="btn btn-secondary btn-lg form-control" href="new-story.php">Post My Own Story.</a>
+        <div class="form-row section post-button-div">
+        <div class="text-center col">
+            <a class="btn btn-secondary btn-lg form-control" href="new-story.php">Post Your Own Story</a>
+        </div>
+        <div class="text-center col">
+            <a class="btn btn-secondary btn-lg form-control" href="prepare.php">Read More Information</a>
+        </div>
         </div>
         <div class="section ">
             <?php
