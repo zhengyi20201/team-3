@@ -1,5 +1,5 @@
 import java.sql.*;
-
+//best code ever
 public class Story {
 	private int id;
 	private String videoURL;
